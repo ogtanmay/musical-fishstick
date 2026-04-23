@@ -68,10 +68,7 @@ class PreviewFragment : Fragment() {
     private fun loadPreviewEmojis() {
         viewLifecycleOwner.lifecycleScope.launch {
             val emojis = withContext(Dispatchers.IO) {
-                val emojiDir = viewModel.viewModelScope.let {
-                    // Get active emoji directory from engine via ViewModel
-                    File(requireContext().filesDir, "active_emoji")
-                }
+                val emojiDir = File(requireContext().filesDir, "active_emoji")
 
                 if (emojiDir.exists()) {
                     emojiDir.walkTopDown()
