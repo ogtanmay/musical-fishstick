@@ -8,7 +8,6 @@
         <item name="colorOnSecondary">@color/white</item>
         <item name="colorSurface">@color/bg_secondary</item>
         <item name="colorOnSurface">@color/text_primary</item>
-        <item name="colorBackground">@color/bg_primary</item>
         <item name="android:colorBackground">@color/bg_primary</item>
         <item name="colorError">@color/ios_red</item>
         <item name="android:statusBarColor">@color/bg_primary</item>
